@@ -33,13 +33,7 @@ function App() {
         {arr.map((tile, index) => {
           // console.log(tile);
           // console.log(index);
-          if (index === 0) {
-            return (
-              <div className="tile" key={index}>
-                {tile}
-              </div>
-            );
-          } else if (index % 4 === 0) {
+          if (index % 4 === 0) {
             console.log(index);
             return (
               <div className="tile" key={index}>
